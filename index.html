@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackboard Cam - 隱私權政策與服務條款</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@300;400;600;700&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FBFBF9;
+            --text-color: #1A1A1A;
+            --primary-color: #2D4373;
+            --accent-color: #D4AF37;
+            --card-bg: #FFFFFF;
+            --border-color: rgba(26, 26, 26, 0.08);
+            --shadow-color: rgba(0, 0, 0, 0.03);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0F172A;
+                --text-color: #E2E8F0;
+                --primary-color: #38BDF8;
+                --accent-color: #F59E0B;
+                --card-bg: #1E293B;
+                --border-color: rgba(226, 232, 240, 0.08);
+                --shadow-color: rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Serif TC', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px var(--shadow-color);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        .logo-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin: 0;
+            color: var(--text-color);
+        }
+
+        .logo-text span {
+            color: var(--primary-color);
+        }
+
+        .tagline {
+            font-size: 0.9rem;
+            color: var(--text-color);
+            opacity: 0.6;
+            margin: 8px 0 0 0;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 20px 0 10px 0;
+            color: var(--text-color);
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 30px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--primary-color);
+        }
+
+        p, li {
+            font-size: 1.05rem;
+            opacity: 0.85;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background-color: rgba(45, 67, 115, 0.04);
+            border-left: 4px solid var(--primary-color);
+            padding: 16px 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 24px 0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .highlight-box {
+                background-color: rgba(56, 189, 248, 0.04);
+            }
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.85rem;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-text">BLACKBOARD <span>CAM</span></div>
+            <div class="tagline">使用者權益與隱私協定聲明</div>
+        </header>
+
+        <main>
+            <h1>隱私權保護政策與使用者條款</h1>
+            <p>歡迎您使用 <strong>Blackboard Cam (黑板筆記相機)</strong>（以下簡稱「本服務」）。為保護您的個人資料隱私與開發者權益，在您開始使用本服務之前，請詳細閱讀以下隱私權保護政策與使用者服務條款：</p>
+
+            <div class="highlight-box">
+                <strong>【核心政策聲明】</strong><br>
+                本服務致力於保護您的資料隱私。所有收集之照片與黑板筆記資料僅用於為您提供 AI 生成摘要、總結與課程整理服務，絕不用於廣告投放，亦不會出售給任何第三方。
+            </div>
+
+            <h2>一、 我們收集與處理的資料</h2>
+            <ul>
+                <li><strong>相機與媒體庫存取權限：</strong>本服務需要存取您的相機以拍攝黑板照片，並需要讀寫媒體庫權限以將整理後的光學校正影像安全存儲於您手機的 Pictures/BlackboardCam 目錄。</li>
+                <li><strong>Google 帳號資訊：</strong>為了提供您每日免費的分析額度與安全同步服務，本服務使用 Firebase Authentication 進行 Google 帳號登入，我們會儲存您的 Email 地址與公開名稱。</li>
+                <li><strong>API 金鑰與提示詞設定：</strong>如果您配置了個人 Gemini API 金鑰或自訂提示詞，這些敏感資訊均經過安全加密技術處理，確保您的密鑰安全不外洩。</li>
+            </ul>
+
+            <h2>二、 資料如何被使用與傳輸</h2>
+            <p>當您點選「生成 AI 筆記」時，本服務會透過安全加密（HTTPS）管道，將黑板照片中的零碎重點文字或影像區塊傳輸至 <strong>Google Gemini API</strong> 進行概念整理與筆記摘要生成。本服務不會常設性地在雲端伺服器備份或保留您的原始黑板相片檔案，所有實體檔案均妥善保存在您的本機裝置中。</p>
+
+            <h2>三、 AI 服務免責聲明</h2>
+            <p>本服務使用 Google 最新的 Gemini 視覺與語言大模型來解析黑板內容。請注意：</p>
+            <ul>
+                <li>AI 所生成之所有內容（包含但不限於公式推導、概念解釋、文字摘要等）皆為自動生成，<strong>僅供學習參考之用</strong>。</li>
+                <li>開發團隊無法保證 AI 產出內容之 100% 準確性與真實性。使用者應自行核對與評估其內容。因信賴 AI 產出內容而導致之任何損失，本 App 及其開發團隊不承擔任何法律與賠償責任。</li>
+            </ul>
+
+            <h2>四、 訂閱與免費額度規範</h2>
+            <p>本服務提供之每日免費額度（如每日 5 次筆記分析與 2 次學期總結）屬於免費贈送性質。開發團隊有權隨時因應 API 維護成本或營運策略，調整免費額度、重置規則或資費方案。</p>
+
+            <h2>五、 用戶刪除資料權益</h2>
+            <p>您有權隨時在 App 中登出您的帳號。若您希望完全刪除您的註冊資料（如登入 Email 等雲端帳戶資訊），可以聯絡我們的開發團隊，我們將在收到請求後 3 個工作天內為您完成雲端資料清除。</p>
+        </main>
+
+        <footer>
+            © 2026 Blackboard Cam Press. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
